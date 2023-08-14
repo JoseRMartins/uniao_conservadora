@@ -1,0 +1,119 @@
+@charset"UTF-8";
+
+/* ************************************* GLOBAL ************************************* */
+
+
+
+.borda{
+    border: 1px solid red;
+}
+
+.gradient:hover {
+    color: black;  
+    background: linear-gradient(135deg, rgba(219, 216, 216, 0.972), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 7px 32px 0 rgba(0, 0, 0, 0.37); 
+    border-radius: 10px; 
+    transition: 0.5s;
+}
+
+.gradient:not(:hover){
+    transition: 0.5s;
+}
+
+.gradient-icon:hover{
+    color: black;  
+    background: linear-gradient(135deg, rgba(219, 216, 216, 0.972), rgba(0, 0, 0, 0.474));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 7px 32px 0 rgba(0, 0, 0, 0.37); 
+    border-radius: 100%; 
+}
+
+/* ************************************* HEADER ************************************* */
+
+.custom-container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/*----------------------- HEADER TOPO ----------------------- */
+
+/* __________  logo __________ */
+
+/* __________  ajuda __________ */
+
+.ajuda{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* __________  barra de pesquisa __________ */
+
+.form-control::placeholder {
+    color: white; 
+}
+
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
+    color: white;
+    text-transform: uppercase;
+    background-color: #00000084;
+    border-radius: 45px;
+    border: 2px solid #ffffffa6;
+    box-shadow:  1px 1px #2AEFA7;
+}
+
+
+/* __________  area usuário __________ */
+
+.pedidos-devolucoes{
+    padding: 12px;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 10px; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.pedidos-devolucoes:hover{
+    background-color: black;
+    color: white;
+}
+
+.user-icon{
+    margin-bottom: -5px;
+    width: 30px;
+    height: 58px;
+    margin-left: 42px;
+}
+
+.user-area{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px; 
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.user-area:hover{
+    background-color: black;
+    color: white;
+}
+
+/*----------------------- NAV ----------------------- */
+
+
+
+
+
+
+
+/* ************************************* MAIN ************************************* */
+
+/* ************************************* SECTION ************************************* */
+
+/* ************************************* FOOTER ************************************* */
