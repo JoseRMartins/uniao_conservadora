@@ -7,89 +7,97 @@
     <link rel="stylesheet" href="css/style.css">
     <title>União Conservadora</title>
 </head>
-<body>
+<body style="overflow-x: hidden;">
                 <!-- FOI UTILIZADO NESTE SITE O FRAMEWORD BOOTSTRAP -->
-<!--************************************* HEADER *************************************-->
-        <!-- O header está divido em 2 partes: header topo e o nav -->
-        <!-- O topo contém o logo, barra de pesquisa e algumas funcionabilidades -->
-        <!-- O nav contém links para outras páginas do site -->
+<!--************************************* HEADER *************************************-->           
+        <!-- O Header está divido em 4 partes, 1 inicialmente para telas menores,
+            2° parte contém a parte de cima do cabeçalho padrão e a 3° é o nav.
+        -->
 
     <!------------------------------  HEADER TOPO ------------------------------>
-    <header>
-        <div class=".custom-container" style="background-color: aqua;">
+
+    <header style="background-color: rgba(43, 77, 48, 0.814); padding-left: 20px; padding-right: 20px;">
+
+        <div class="row d-md-none text-center">  <!-- Cabeçalho para telas md / sm -->
+            <div class="col-sm-4">
+                <p>Olá, mundo</p>
+            </div>
+
+            <div class="col-sm-4"> <!-- Logo-sm -->
+                <p>Olá, mundo</p>
+            </div>
+
+            <div class="col-sm-4">
+                <p>Olá, mundo</p>
+            </div>
+        </div>
+                                    <!-- (fim) do Cabeçalho para telas md / sm -->
+
+
+                                <!-- (início) Cabeçalho padrão -->
+        <div>
             <div class="row">
-                <div class="col-md-3"> <!--Logo -->
+                <div class="col-md-2 d-none d-md-block"> <!--Logo -->
                     <img src="https://i0.wp.com/yourpilateslifestyle.com/blog/wp-content/uploads/2018/05/YPL-logo-circle-300px.png?fit=501%2C500&ssl=1" width="100px">
                 </div>
 
-                <div class="col-md-1">
-                    <a class="ajuda" href="">Ajuda?</a>
-                </div>
+                <div class="col-md-1 d-none d-md-block"></div>
 
-                <div class="col-md-4 d-flex justify-content-center align-items-center"> <!-- barra de pesquisa -->
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center"> <!-- barra de pesquisa -->
                     <div class="input-group">
                         <input  type="text" class="form-control" placeholder="buscar produto..." >
                     </div>
                 </div>
 
-
-                <div class="col-md-4 d-flex justify-content-around align-items-center" style="background-color: rgb(141, 141, 253);"> <!-- Área do usuário -->
-
-                    <a class="pedidos-devolucoes gradient" href="#">Pedidos e Devoluções</a>
-                    
-                    <div class="d-flex flex-column text-center">
+                <div class="col-md-3 d-none d-md-flex d-flex justify-content-around align-items-center"> <!-- Área do usuário -->
+                    <div class="d-flex flex-column text-center"> 
                         <a class="user-icon" href="#"><img src="css/svg/user-svgrepo-com.svg" alt=""></a>
                         <a class="user-area gradient" href="#">Login</a>
                         <a class="user-area gradient" href="#">Criar conta</a>
                     </div>
-
                     <a href="#">
-                        <img src="css/svg/cart-shopping-fast-svgrepo-com.svg" alt="">
+                        <img src="css/svg/cart-shopping-fast-svgrepo-com.svg" alt=""> <!-- carrinho -->
                     </a>
                 </div>
             </div>
         </div>
 
     <!------------------------------ NAV ------------------------------>
-        <nav>
-            <div class="row" style="background-color: rgb(212, 168, 254);">
-                <div class="col-md-2 borda d-flex justify-content-start">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href=""><img src="css/svg/facebook-176-svgrepo-com.svg" alt=""></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href=""><img src="css/svg/instagram-svgrepo-com.svg" alt=""></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href=""><img src="css/svg/twitter-154-svgrepo-com.svg" alt=""></a>
-                        </div>
-                    </div>
+        <nav class="d-none d-md-block pt-4">
+            <div class="row">
+                <div class="col-md-2 d-flex justify-content-around">
+                        
+                        <a class="icons-nav align-self-center p-2" href=""><img src="css/svg/facebook-176-svgrepo-com.svg" alt=""></a>
+                        
+                        <a class="icons-nav align-self-center p-2" href=""><img src="css/svg/instagram-svgrepo-com.svg" alt=""></a>
+                    
+                        <a class="icons-nav align-self-center p-2" href=""><img src="css/svg/twitter-154-svgrepo-com.svg" alt=""></a>
+                        
                 </div>
 
                 <div class="col-md-1"></div>
 
-                <div class="col-md-6 borda text-center">
-                    <div class="d-flex justify-content-around">
-                        <a href="">Destaques</a>
-                        <a href="">Em alta</a>
-                        <a href="">Novidades</a>
-                        <a href="">Ofertas</a>
-                    </div>
+                <div class="col-md-6 d-flex justify-content-around text-center ">
+                        <a class="flex-fill nav-meio" href="index.html"><div class="ajuste-centro-nav">Destaques</div></a>
+                        <a class="flex-fill nav-meio"  href=""><div class="ajuste-centro-nav">Em alta</div></a>
+                        <a class="flex-fill nav-meio"  href=""><div class="ajuste-centro-nav">Novidades</div></a>
+                        <a class="flex-fill nav-meio"  href=""><div class="ajuste-centro-nav">Ofertas</div></a>
                 </div>
 
                 <div class="col-md-1"></div>
 
-                <div class="col-md-2 borda d-flex justify-content-end">
-                    <a href="">Categorias <img src="css/svg/bars-svgrepo-com.svg" alt=""></a>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a class="background-escuro-categorias" href="">Categorias <img style="margin-bottom: 4px;" src="css/svg/bars-svgrepo-com.svg" alt=""></a>
                 </div>
             </div>
         </nav>
-    </header>
+    </header>                       <!-- (fim) Cabeçalho padrão -->
 
-
+    <!-- 846px -->
 
 <!--************************************* MAIN *************************************-->
+
+
 
 <!--************************************* SECTION *************************************-->
 

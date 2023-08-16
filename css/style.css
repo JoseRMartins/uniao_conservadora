@@ -1,8 +1,16 @@
 @charset"UTF-8";
 
+/* ************************************* MEDIA QUERIES ************************************* */
+
+
+
+
+
+
+
+
+
 /* ************************************* GLOBAL ************************************* */
-
-
 
 .borda{
     border: 1px solid red;
@@ -10,16 +18,16 @@
 
 .gradient:hover {
     color: black;  
-    background: linear-gradient(135deg, rgba(219, 216, 216, 0.972), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgba(12, 60, 193, 0.972), rgba(25, 186, 22, 0.699));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 7px 32px 0 rgba(0, 0, 0, 0.37); 
     border-radius: 10px; 
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .gradient:not(:hover){
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .gradient-icon:hover{
@@ -31,12 +39,25 @@
     border-radius: 100%; 
 }
 
+
+
 /* ************************************* HEADER ************************************* */
 
 .custom-container {
     margin-left: -15px;
     margin-right: -15px;
 }
+/*----------------------- NAV-TOPO-TELAS-SM ----------------------- */
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) { 
+    .nav-topo{
+        display: none;
+        background-color: orange;
+    }
+}
+
 
 /*----------------------- HEADER TOPO ----------------------- */
 
@@ -61,26 +82,18 @@
     text-transform: uppercase;
     background-color: #00000084;
     border-radius: 45px;
-    border: 2px solid #ffffffa6;
-    box-shadow:  1px 1px #2AEFA7;
+    border: 2px solid #575757a6;
+}
+
+.input-group>.form-control:focus,
+.input-group>.form-floating:focus,
+.input-group>.form-select:focus {
+    border-color: #575757a6;;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2); 
 }
 
 
 /* __________  area usuário __________ */
-
-.pedidos-devolucoes{
-    padding: 12px;
-    width: 100px;
-    text-decoration: none;
-    border-radius: 10px; 
-    color: white;
-    background-color: rgba(0, 0, 0, 0.55);
-}
-
-.pedidos-devolucoes:hover{
-    background-color: black;
-    color: white;
-}
 
 .user-icon{
     margin-bottom: -5px;
@@ -105,6 +118,82 @@
 }
 
 /*----------------------- NAV ----------------------- */
+
+/* __________  NAV-ESQUERDA __________ */
+
+.icons-nav:hover{
+    box-shadow: 0 7px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: 0.1s;
+}
+
+.icons-nav:not(:hover){
+    transition: 0.1s;
+}
+
+/* __________  NAV-CENTRO __________ */
+
+.background-escuro{
+    color: white;
+    background-color: #00000084;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.gradient-no-radius:hover{
+    color: rgb(255, 255, 255);  
+    background: linear-gradient(135deg, rgba(219, 216, 216, 0.972), rgba(0, 0, 0, 0.474));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.2s;
+}
+
+.gradient-no-radius:not(:hover){
+    transition: 0.2s;
+}
+
+@media (max-width: 846px) and (min-width: 768px){
+    .ajuste-centro-nav{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+} 
+
+.nav-meio{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-meio::after{
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: #ffc832;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.nav-meio:hover:after{
+    transform: scaleX(1);
+}
+
+/* __________  NAV-DIREITA __________ */
+
+.background-escuro-categorias{
+    color: #ffc832;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+/* __________  NAV-MEDIA-QUERIES __________ */
+
 
 
 
