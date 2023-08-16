@@ -1,10 +1,15 @@
 @charset"UTF-8";
 
+/* ************************************* IMPORT ************************************* */
+
+@font-face {
+    font-family: "Droid";
+    src: url("fonts/DroidSerif-Regular.ttf") format("truetype");
+}
+
+
+
 /* ************************************* MEDIA QUERIES ************************************* */
-
-
-
-
 
 
 
@@ -42,6 +47,10 @@
 
 
 /* ************************************* HEADER ************************************* */
+
+body{
+    background-color: #F9F9F9;
+}
 
 .custom-container {
     margin-left: -15px;
@@ -192,16 +201,52 @@
     padding-left: 10px;
 }
 
-/* __________  NAV-MEDIA-QUERIES __________ */
-
-
-
-
-
-
-
 
 /* ************************************* MAIN ************************************* */
+
+/*----------------------- CAROUSEL ----------------------- */
+
+.carousel-conf{
+    height: 250px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #454545;
+}
+
+.imagem1{
+    background-image: 
+    url(https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/613f65bbaf30031d31df3077/1631544779120/California+Streaming+6K+No+Logo.png);
+    background-size: cover;
+    height: 250px;
+}
+
+.imagem2{
+    background-image: url(https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg);
+    background-size: cover;
+    height: 250px;
+}
+
+.imagem3{
+    background-image: url(https://wallpapers.com/wp-content/themes/wallpapers.com/src/splash-n.jpg);
+    background-size: cover;
+    height: 250px;
+}
+
+/*----------------------- 1° CONTAINER ----------------------- */
+
+.p-categorias{
+    border-bottom: 2px solid #009B3A; 
+    color: #303030;
+    font-size: 20px;
+    font-family: 'Droid';
+    font-weight: bold;
+}
+
+.espacamento-card{
+    margin-right: 5px;
+}
+
 
 /* ************************************* SECTION ************************************* */
 
