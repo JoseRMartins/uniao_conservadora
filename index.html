@@ -18,49 +18,45 @@
 
     <header style="background-color: rgba(43, 77, 48, 0.814); padding-left: 20px; padding-right: 20px;">
 
-        <div class="row d-md-none text-center">  <!-- Cabeçalho para telas md / sm -->
-            <div class="col-sm-4">
-                <p>Olá, mundo</p>
-            </div>
 
-            <div class="col-sm-4"> <!-- Logo-sm -->
-                <p>Olá, mundo</p>
-            </div>
+        <div class="navbar navbar-expand-md">
+            <div class="container"> <!-- Adicionei um container para manter o conteúdo centralizado -->
 
-            <div class="col-sm-4">
-                <p>Olá, mundo</p>
-            </div>
-        </div>
-                                    <!-- (fim) do Cabeçalho para telas md / sm -->
-
-
-                                <!-- (início) Cabeçalho padrão -->
-        <div>
-            <div class="row">
-                <div class="col-md-2 d-none d-md-block"> <!--Logo -->
+                <a class="navbar-brand col-md-2 d-none d-md-block" href="#">
                     <img src="https://i0.wp.com/yourpilateslifestyle.com/blog/wp-content/uploads/2018/05/YPL-logo-circle-300px.png?fit=501%2C500&ssl=1" width="100px">
-                </div>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="col-md-1 d-none d-md-block"></div>
-
-                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center"> <!-- barra de pesquisa -->
+                <div class="col-md-7 col-sm-8 col-8 d-flex justify-content-center align-items-center"> <!-- barra de pesquisa -->
                     <div class="input-group">
                         <input  type="text" class="form-control" placeholder="buscar produto..." >
                     </div>
                 </div>
 
-                <div class="col-md-3 d-none d-md-flex d-flex justify-content-around align-items-center"> <!-- Área do usuário -->
-                    <div class="d-flex flex-column text-center"> 
-                        <a class="user-icon" href="#"><img src="css/svg/user-svgrepo-com.svg" alt=""></a>
-                        <a class="user-area gradient" href="#">Login</a>
-                        <a class="user-area gradient" href="#">Criar conta</a>
+
+                <div class="col-md-2 col-1 collapse navbar-collapse" id="navbarCollapse">
+                    
+                    <div class="d-flex ms-3"> <!-- Área do usuário -->
+                        <div class="d-flex flex-column text-center me-3"> 
+                            <a class="user-icon ajuste-user-icon" href="#"><img src="css/svg/user-svgrepo-com.svg" alt=""></a>
+                            <a class="user-area gradient ajuste-login" href="#">Login</a>
+                            <a class="user-area gradient" href="#">Criar conta</a>
+                        </div>
                     </div>
-                    <a href="#">
+                </div>
+
+                <div class="col-md-1 col-sm-2 col-2">
+                    <a href="#" class="align-self-center icon-cart">
                         <img src="css/svg/cart-shopping-fast-svgrepo-com.svg" alt=""> <!-- carrinho -->
                     </a>
                 </div>
+
             </div>
         </div>
+                                    
 
     <!------------------------------ NAV ------------------------------>
         <nav class="d-none d-md-block pt-4">
@@ -79,9 +75,9 @@
 
                 <div class="col-md-6 d-flex justify-content-around text-center ">
                         <a class="flex-fill nav-meio" href="index.html"><div class="ajuste-centro-nav">Destaques</div></a>
-                        <a class="flex-fill nav-meio"  href=""><div class="ajuste-centro-nav">Em alta</div></a>
-                        <a class="flex-fill nav-meio"  href=""><div class="ajuste-centro-nav">Novidades</div></a>
-                        <a class="flex-fill nav-meio"  href=""><div class="ajuste-centro-nav">Ofertas</div></a>
+                        <a class="flex-fill nav-meio nav-meio-borda"  href=""><div class="ajuste-centro-nav">Em alta</div></a>
+                        <a class="flex-fill nav-meio nav-meio-borda"  href=""><div class="ajuste-centro-nav">Novidades</div></a>
+                        <a class="flex-fill nav-meio nav-meio-borda"  href=""><div class="ajuste-centro-nav">Ofertas</div></a>
                 </div>
 
                 <div class="col-md-1"></div>
@@ -123,6 +119,21 @@
             </div>
         </section>
 
+    <!------------------------------ PRINCIPAIS CATEGORIAS ------------------------------>
+
+        <section>
+            <div class="container mt-4">
+                <div class="row p-categorias">
+                    <div class="col-md-12">
+                        <p style="margin-bottom: 0.6%">PRINCIPAIS CATEGORIAS</p> <!-- Frase e linha -->
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+
         <!------------------------------ CARDS EM DESTAQUE ------------------------------>
 
         <section>
@@ -132,7 +143,7 @@
                         <p style="margin-bottom: 0.6%">EM DESTAQUE</p> <!-- Frase e linha -->
                     </div>
                 </div>
-            
+
                 </div>
             </div>
         </section>
@@ -171,9 +182,93 @@
 
 <!--************************************* FOOTER *************************************-->
 
-    <footer>
-        
+    <footer class="pt-5">
+            <div class="row text-center footer-top">  <!-- FOOTER TOPO (INÍCIO) -->
 
+                <div class="col-md-4 borda-footer-topo">
+                    <div class="d-inline-block mt-3 mb-3">
+                        <img class="p-footer-top-img d-inline-block" src="css/svg/whatsapp-128-svgrepo-com.svg">
+                    </div>
+
+                    <div class="d-inline-block">
+                        <p class=" p-footer-top d-inline-block">(21) 0000-0000</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 borda-footer-topo">
+                    <div class="d-inline-block mt-3 mb-3">
+                        <img class="p-footer-top-img d-inline-block" src="css/svg/card-svgrepo-com.svg">
+                    </div>
+
+                    <div class="d-inline-block">
+                        <p class=" p-footer-top d-inline-block">PARCELE EM ATÉ 3X NO CARTÃO</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 borda-footer-topo">
+                    <div class="d-inline-block mt-3 mb-3">
+                        <img class="p-footer-top-img d-inline-block" src="css/svg/delivery-fast-solid-svgrepo-com.svg">
+                    </div>
+
+                    <div class="d-inline-block">
+                        <p class=" p-footer-top d-inline-block">ENTREGAMOS EM TODO BRASIL</p>
+                    </div>
+                </div>
+            </div> <!-- FOOTER TOPO (FIM) -->
+
+            <div class="row text-center mb-5">   <!-- FOOTER MEIO (INÍCIO) -->
+
+                <div class="col-md-3 mt-5 borda-footer-topo-meio">
+                    <h4 class="d-block h4-footer">MAPA DO SITE</h4>
+                    <a class="d-block mt-2 text-footer" href="">Destaques</a>
+                    <a class="d-block mt-2 text-footer" href="">Em alta</a>
+                    <a class="d-block mt-2 text-footer" href="">Novidades</a>
+                    <a class="d-block mt-2 text-footer text-espacamento-borda" href="">Ofertas</a>
+                </div>
+
+                <div class="col-md-3 mt-5 borda-footer-topo-meio">
+                    <h4 class="d-block h4-footer">INFORMAÇÕES</h4>
+                    <a class="d-block mt-2 text-footer" href="">Freete Grátis</a>
+                    <a class="d-block mt-2 text-footer" href="">Sobre a União Conservadora</a>
+                    <a class="d-block mt-2 text-footer" href="">Despachos e entregas</a>
+                    <a class="d-block mt-2 text-footer" href="">Trocas e Devoluções</a>
+                    <a class="d-block mt-2 text-footer text-espacamento-borda" href="">Termos de uso</a>
+                </div>
+
+                <div class="col-md-3 mt-5 borda-footer-topo-meio">
+                    <h4 class="d-block h4-footer">ENDEREÇO</h4>
+                    <p class="mx-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit dolorem accusantium aperiam totam minim</p>
+
+                    <h4 class="d-block mt-4 mb-4 h4-footer">FALE CONOSCO</h4>
+                    <p> (21) 0000-0000 / (21) 0000-0000</p>
+
+                    <a class="d-block mt-2 text-footer" href="">Onde estamos</a>
+                    <a class="d-block mt-2 text-footer text-espacamento-borda" href="">Entre em contato</a>
+                </div>
+
+                <div class="col-md-3 mt-5 mb-5">
+                    <h4 class="d-block h4-footer">FORMAS DE PAGAMENTO</h4>
+                    <div class="d-inline-block mt-2">
+                        <img src="css/png/boleto.png" style="width: 40px;">
+                        <img  src="css/png/Mastercard-Logo.png" style="width: 40px;">
+                        <img  src="css/png/visa-17.png" style="width: 40px;">
+                        <img src="css/png/Elo_logo.png" style="width: 30px;">
+                    </div>
+                    <div class="d-block mt-1 mt-2">
+                        <img src="css/png/pix-106.png" style="width: 70px;">
+                        <img src="css/png/picpay.png" style="width: 30px;">
+                        <img src="css/png/123060.png " style="width: 30px;">
+                    </div>
+                </div>
+            </div>  <!-- FOOTER TOPO (FIM) -->
+
+            <div class="row text-center">  <!-- FOOTER INFERIOR (INÍCIO) -->
+
+                <div class="col-sm-12 bg-dark p-3">
+                    <p class="text-light">&copy; Todos os direitos reservados.</p>
+                </div>
+
+            </div>  <!-- FOOTER INFERIOR (FIM) -->
     </footer>
 
 <!--************************************* JS LIBRARY *************************************-->
@@ -186,7 +281,6 @@
 
 <!------------------------------ JS.BOOTSTRAP + POPPERS ------------------------------>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 </html>
