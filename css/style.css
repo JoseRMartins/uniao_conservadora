@@ -19,6 +19,10 @@ body{
     background-color: #ffffff;
 }
 
+html {
+    min-width: 379px;
+}
+
 .borda{
     border: 1px solid red;
 }
